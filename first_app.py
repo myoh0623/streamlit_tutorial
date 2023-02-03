@@ -34,6 +34,14 @@ def temp_map():
 
 def main():
     st.title("First_APP")
+
+    st.sidebar.write('''
+    # lab1
+    # lab2
+    - lab3
+    - lab4
+    ''')
+
     df = pd.DataFrame({
         "first_col":[1, 2, 3, 4],
         "second_col":[10, 20, 30, 40]
