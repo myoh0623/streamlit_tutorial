@@ -8,4 +8,6 @@ file = st.file_uploader("upload_file")
 if file is None:
     file = st.camera_input("take picture")
 
-st.download_button(" 사진을 다운로드 ", file)
+if file is not None:
+    file = cv2.imdecode(file)
+    st.download_button(" 사진을 다운로드 ", file)
