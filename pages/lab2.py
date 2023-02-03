@@ -1,4 +1,4 @@
-from streamlit as st
+import streamlit as st
 from datetime import datetime
 start_time = st.slider(
     "When do you start?",
